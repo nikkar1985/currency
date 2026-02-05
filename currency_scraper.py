@@ -10,7 +10,7 @@ for pair in pairs:
         ticker=yf.Ticker(pair)
         price=ticker.fast_info('last_price')
         name=pair.leplace("=X", "") 
-        if len(name) == :
+        if len(name) == 6:
             name = f{name [:3]}/{name [3:]}
 
         rate[name]=round(price,4)
