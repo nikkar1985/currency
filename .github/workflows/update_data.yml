@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+     # Προσθήκη αδειών για να μπορεί το bot να κάνει push
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
